@@ -1,0 +1,22 @@
+/*
+Program: Hockey - Client Code
+Programmer: Faheem Warsalee
+Course: ICS4U
+Date: 11/13/2018
+
+Brief Description: Client code for puck assignment*/
+
+class Hockey
+{
+  public static void main(String[] args)
+  {
+    Puck p = new Puck(4.3,2,1);
+    Puck q = new Puck(5.5);
+    Puck r = new Puck();
+    
+    System.out.println(p);
+    System.out.println(q);
+    System.out.println(r);
+    
+  }
+}
