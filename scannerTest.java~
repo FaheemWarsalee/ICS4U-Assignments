@@ -1,0 +1,22 @@
+import java.io.*;
+
+class scannerTest
+{
+  public static void main(String[] args)
+  {
+    InputStreamReader inStream = new InputStreamReader(System.in);  
+    BufferedReader bufRead = new BufferedReader(inStream);
+    
+    
+    try
+    {
+      System.out.println("Enter your name: ");
+      name = bufRead.readLine();
+     }
+    catch (IOException err)
+    {
+      System.out.println("Failure");
+    }
+    System.out.println(name + " is your name");
+  }
+}

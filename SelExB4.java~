@@ -1,0 +1,12 @@
+/*
+Program: SelExB4
+Programmer: Faheem Warsalee
+Course: ICS4U
+Date: 9/6/2018
+
+Brief Description: Write a program that asks for the user's age.  If the user is under 13, output, "You are a child".  For 13 to 19, output, 
+                                 "You are a teen".  From 20 to 65, "You are an adult".  Over 65, "You are a senior citizen".*/
+
+class SelExB4
+{
+}

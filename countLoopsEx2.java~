@@ -1,0 +1,37 @@
+/*
+Program: CountLoopsEx2
+Programmer: Faheem Warsalee
+Course: ICS4U
+Date: 9/5/2018
+
+Brief Description: (a) Output the times-tables (from 1 to 12) for whichever number the user requests.  For example, if the user enters 3, your output should be:
+Hint: See the Output in Turing page for a more compact (efficient) way to "put" multiple values on the same line.
+(turing solution) 
+Extension:
+(b) Allow the user to specify the start and end to the table (e.g., 4 to 15)
+(c) Allow the user to specify the step size (e.g., by 3 is 4, 7, 10, 13).*/
+
+class countLoopsEx2
+{
+  public static void main(String[] args)
+  {
+    int mult, ans, start, end;
+    
+    System.out.println("1-12 x table");
+    System.out.println("What number to multiply: ");
+    mult = In.getInt();
+    
+    System.out.println("When to start ");
+    start = In.getInt();
+    
+    System.out.println("When to end: ");
+    end = In.getInt();
+    
+    for(int i = start; i <=end; i++)
+    {
+      ans = i*mult;
+      System.out.println(mult + " x " + i + " is equal to: " + ans);
+    }
+    
+  }
+}

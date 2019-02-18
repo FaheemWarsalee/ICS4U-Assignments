@@ -1,0 +1,8 @@
+Rectangle Class: 
+X coordinate Rectangle A: 0	Y coordinate Rectangle A: 0
+Width A: 5	Height A: 5
+Area A: 25 px^2	Perimeter A: 20 px
+X coordinate Rectangle B: 1	Y coordinate Rectangle B: 0
+Width B: 1	Height B: 1
+Area B: 1 px^2	Perimeter B: 4 px
+Intersection Rectangle of Rect. A & Rect. B: base: (1,0) w :1 h: 1

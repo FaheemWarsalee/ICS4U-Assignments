@@ -1,0 +1,11 @@
+class enterString
+{
+  public static void main(String[] args)
+  {
+    Scaner input = new Scanner(System.in);
+    String line;
+    
+    line = input.readLine();
+    System.out.println(line);
+  }
+}

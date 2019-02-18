@@ -1,0 +1,30 @@
+class piDayTest
+{
+  public static void main(String[] args)
+  {
+    int pcs = 8;
+    int ppl = 4;
+    int max;
+    
+    if(pcs % ppl == 0)
+      max = pcs/ppl;
+    else
+      max = 1;
+    
+    System.out.println(countWays(pcs,ppl, max));
+  }
+  
+  public static int countWays(int pcs, int ppl,int max) 
+  { 
+    int counter = 0; // Initialize result 
+    return counter;
+  } 
+}
+
+//    for (int i = 1; i < pcs; i++) 
+//      for (int j = i; j < pcs; j++) 
+//      for (int k = j; k < pcs; k++) 
+//      for (int l = k; l < pcs; l++) 
+//      if (i + j + k + l == pcs) 
+//      counter++; 
+    

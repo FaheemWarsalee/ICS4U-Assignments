@@ -1,0 +1,51 @@
+/*
+ Program: Rectangle Class Assignment
+ Programmer: Faheem Warsalee
+ Course: ICS4U
+ Date: 10/15/2018
+ 
+ Brief Description: Checks where 2 rectangles intersect*/
+
+//Imports
+import java.io.*;
+
+class rectangleClient
+{
+  public static void main(String[] args)
+  {
+    Rectangle r = new Rectangle();//Step #3 - 4
+    Rectangle s = new Rectangle();
+    
+    r.set(1);
+    s.set(2);
+    
+    Rectangle t = Rectangle.intersection(r,s);
+    
+    //Printing to file
+    try
+    {
+      FileWriter fw = new FileWriter("rectangleClass.txt");
+      PrintWriter pw = new PrintWriter(fw);
+      
+      pw.println("Rectangle Class: ");
+      pw.println("X coordinate Rectangle A: " + r.getLeft() + "\tY coordinate Rectangle A: " + r.getBottom());
+      pw.println("Width A: " + r.getWidth() +"\tHeight A: " + r.getHeight());
+      pw.println("Area A: " + r.area() + " px^2" + "\tPerimeter A: " + r.perimeter() + " px");
+      pw.println("X coordinate Rectangle B: " + s.getLeft() + "\tY coordinate Rectangle B: " + s.getBottom());
+      pw.println("Width B: " + s.getWidth() +"\tHeight B: " + s.getHeight());
+      pw.println("Area B: " + s.area() + " px^2" +"\tPerimeter B: " + s.perimeter() + " px");
+      pw.println("Intersection Rectangle of Rect. A & Rect. B: " + t);
+      
+      pw.close();
+    }
+    catch(IOException e)
+    {
+      System.out.println("an IOException has occured.");
+    }
+    catch(Exception e)
+    {
+      System.out.println("an unnexpected error has occured.");
+    }
+    
+  }
+}

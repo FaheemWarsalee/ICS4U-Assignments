@@ -1,0 +1,9 @@
+import java.io.*;
+
+class fileMakingTest
+{
+ public static void main(String[] args)
+ {
+   FileReader fw = new FileReader("test.txt");
+ }
+}

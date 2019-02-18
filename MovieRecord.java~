@@ -1,0 +1,11 @@
+class MovieRecord
+{
+  String title, director;
+  int release, runTime;
+  double rating;
+  
+  String printData()
+  {
+    return title + "\n" + director + "\n" + release + "\n" + runTime + "\n" + rating;
+  }
+}
