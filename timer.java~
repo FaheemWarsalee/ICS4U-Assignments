@@ -1,0 +1,11 @@
+class timer
+{
+  public static void main(String[] args)
+  {
+    for(int i = 10; i  >= 0; i --)
+    {
+      thread.sleep(1000);
+      System.out.println(i);
+    }
+  }
+}
